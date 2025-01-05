@@ -5,11 +5,11 @@ export default function Task({prop}){
 
 const formSubmit= (e)=>{
     e.preventDefault()
-    console.log(e)
+    // console.log(e)
     let data = new FormData(e.target);
-    console.log(data)
+    // console.log(data)
     let formObject = Object.fromEntries(data.entries());
-    console.log(prop,formObject)
+    // console.log(prop,formObject)
     prop(formObject)
 }
 
