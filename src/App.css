@@ -1,7 +1,29 @@
+*{
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
 .form{
+  font-size: larger;
   /* width: 1000px; */
-  padding: 3em 25em;
+  padding: 3em 20em;
 }
 .container{
   width: 100px;
+}
+.insidecard{
+  /* display: flex; */
+  /* align-items: center; */
+  /* border: 40px 50px; */
+  /* padding: 50px 30px; */
+  /* border-radius: 55%; */
+  /* font-size: 2em; */
+}
+.card{
+  margin: 0px 30%;
+  width: 500px;
+  
+  /* text-align: left; */
+}
+.inline{
+  /* display: block; */
 }

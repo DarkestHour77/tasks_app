@@ -1,4 +1,4 @@
-import { Button } from "react-bootstrap"
+import { Button, Col, Row } from "react-bootstrap"
 import Card from "react-bootstrap/Card"
 
 export default function TaskCard(props){
@@ -6,17 +6,22 @@ export default function TaskCard(props){
     // console.log(props.item,props.id)
     
     return(
-        <div>
-        <Card>
+        <div className="insidecard">
+        <Card className="card">
             
                 <Card.Body>
-                    <div>{props.id}</div>
-                    <Card.Title>{props.item.name}</Card.Title>
-                    <Card.Subtitle>{props.item.date}</Card.Subtitle>
-                    <Card.Text>{props.item.description}</Card.Text>
+                   <Row>
+                       <Col>
+                            <Card.Title as="h3" >{props.item.name}</Card.Title>
+                       </Col>
+                       <Col>
+                            <Card.Subtitle as="h3">{props.item.date}</Card.Subtitle>
+                       </Col>
+                   </Row>
+                    <Card.Text as="h5">{props.item.description}</Card.Text>
                     <Button>Edit</Button>
-                    <Button>Delete</Button>
-                    <Button onClick={() => {props.del(props.id)}}>Done</Button>
+                    <Button onClick={() => {props.del(props.id)}}>Delete</Button>
+                    <Button >Done</Button>
                 </Card.Body>
         </Card>
         </div>

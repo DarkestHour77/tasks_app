@@ -25,6 +25,7 @@ export default function ListTask(){
         setList(newList)
     }
 
+
    const del =(index) =>{
         const result= list.filter((item,i) => index !== i);
 
